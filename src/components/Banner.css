@@ -1,0 +1,45 @@
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.banner-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-text {
+  position: absolute;
+  top: 40%;
+  right: 9%;
+  transform: translateY(-50%);
+  color: #fff;
+  z-index: 1;
+  font-size: 4em;
+  text-align: right;
+  animation: lightning-pulse 1.9s infinite;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@keyframes lightning-pulse {
+  0% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 10px #f0f,
+      0 0 10px #f0f, 0 0 10px #f0f, 0 0 10px #f0f, 0 0 15px #f0f;
+  }
+  50% {
+    text-shadow: 0 0 3px #fff, 0 0 7px #fff, 0 0 15px #fff, 0 0 20px #f0f,
+      0 0 30px #f0f, 0 0 35px #f0f, 0 0 40px #f0f, 0 0 75px #f0f;
+  }
+  100% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff,
+      0 0 40px rgb(61, 4, 61), 0 0 80px #f0f, 0 0 90px rgb(61, 4, 61),
+      0 0 100px rgb(61, 4, 61), 0 0 150px rgb(61, 4, 61);
+  }
+}
