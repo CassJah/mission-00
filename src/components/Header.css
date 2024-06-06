@@ -228,7 +228,7 @@
   z-index: 1000;
 }
 
-/* Remove duplicate or conflicting search bar styles */
+
 .search-bar {
   position: absolute;
   top: 50%;
@@ -253,7 +253,6 @@
   font-size: 1rem;
 }
 
-/* Media query for responsiveness */
 @media (max-width: 768px) {
   .nav-buttons {
     display: none;
